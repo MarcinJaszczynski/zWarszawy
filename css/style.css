@@ -1,0 +1,18 @@
+/*Navigation*/
+
+.navbar {
+    background: #222222 !important;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #ffffff !important;
+    opacity: 0.7;
+}
+
+.navbar a:hover {
+    opacity: 1;
+    background-color: #111111;
+}
