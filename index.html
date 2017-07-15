@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,6 +23,20 @@
 </head>
 
 <body>
+    <!--FACEBOOK SCRIPT-->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
 
     <!--START NAVIGATION-->
 
@@ -41,12 +56,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#start">Start</a></li>
+                    <li><a href="#wawCarousel">Start</a></li>
                     <li><a href="#onas">O nas</a></li>
                     <li><a href="#wycieczki">Wycieczki</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#dokumenty">Documenty</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
 
 
                 </ul>
@@ -70,8 +83,8 @@
             <div class="item active">
                 <img src="img/slide_suprasl.jpg" alt="Supraśl">
                 <div class="carousel-caption">
-                    <h3>Supraśl</h3>
-                    <p>Lorem ipsum factum</p>
+                    <h3>Supraśl Ikony i Szeptuchy</h3>
+                    <a href="https://538388-2.evenea.pl/" target="_blank"><button class="btn btn-large">Sprawdź szczegóły na Evenea.pl</button></a>
                 </div>
             </div>
 
@@ -79,14 +92,14 @@
                 <img src="img/slide_merowszczyzna.jpg" alt="Merowszczyzna">
                 <div class="carousel-caption">
                     <h3>Merowszczyzna</h3>
-                    <p>Lorem ipsum factum</p>
+                    <a href="https://538388-2.evenea.pl/" target="_blank"><button class="btn btn-large">Sprawdź szczegóły na Evenea.pl</button></a>
                 </div>
             </div>
             <div class="item">
                 <img src="img/slide_wegrow.jpg" alt="Zamek w Liwie">
                 <div class="carousel-caption">
                     <h3>Zamek w Liwie</h3>
-                    <p>Lorem ipsum factum</p>
+                    <a href="https://538388-5.evenea.pl/" target="_blank"><button class="btn btn-large">Sprawdź szczegóły na Evenea.pl</button></a>
                 </div>
             </div>
         </div>
@@ -106,15 +119,16 @@
 
     </div>
 
+
     <!--END CAROUSEL-->
 
 
 
     <!--ABOUT US-->
-    <div class="container about-us">
+    <div class="container about" id="onas">
         <h1>O nas</h1>
 
-        <div class="row vertical-align">
+        <div class="row">
             <div class="col-md-6 col-xs-12 firm-about">
                 <p>
                     Do wspólnych weekendowych wyjazdów z Warszawy zaprasza Państwa Biuro Podróży WawaGra.</p>
@@ -127,12 +141,12 @@
                 <img src="img/gwarancja.jpg" alt="Ubezpieczenie"> </div>
 
         </div>
-        <div class="row">
+        <div class="row ">
             <hr />
-            <div class="col-lg-3 col-md-3 col-xs-6 person-photo">
+            <div class="col-lg-3 col-md-3 col-xs-12 person-photo">
                 <img src="img/adrian.jpg">
             </div>
-            <div class="col-lg-9 col-md-9 com-xs-6 person-about">
+            <div class="col-lg-9 col-md-9 col-xs-12 person-about">
                 <p>Osobą, którą będzie można spotkać niemal na każdym wyjeździe jest <span class="person-name">Adrian Pogorzelski</span>. </p>
                 <p>Z zamiłowania archeolog który najchętniej nie wychodził by z krzaków (a w krzakach zawsze usiłuje coś znaleźć).
                 </p>
@@ -142,16 +156,16 @@
             </div>
         </div>
     </div>
-    <!--END RESERVATION-->
+    <!--END ABOUT US-->
+
     <!--TRAVEL SECTION-->
 
     <div class="container-liquid travel" id="wycieczki">
         <div class="container">
 
             <h1> Poznaj nasze propozycje</h1>
-            <p>Ruszaj z Warszawy na weekend</p>
             <div class="row">
-                <div class="col-md-3 col-xs-6 travel-odd ">
+                <div class="col-md-3 col-xs-12 travel-odd ">
                     <div class="travel-event">
                         <p class="month">
                             Sierpień
@@ -160,89 +174,242 @@
                             26
                         </p>
                         <h4>
-                            Mazowsze nieznane cz.1</h4>
+                            Mazowsze nieznane cz.1 - Pod znakiem smoka</h4>
                         <div class="travel-event-places">
                             Góra Kalwaria, Czersk, Warszawice, Całowanie
                         </div>
-                        <button class="btn btn-default ">Więcej</button>
+                        <a href="https://538388-4.evenea.pl/" target="_blank"><button class="btn btn-default ">Więcej na evenea</button></a>
 
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 travel-odd ">
+                <div class="col-md-3 col-xs-12 travel-odd ">
                     <div class="travel-event">
                         <p class="month">
-                            Sierpień
+                            Wrzesień
                         </p>
                         <p class="month-day">
-                            26
+                            3
                         </p>
                         <h4>
-                            Mazowsze nieznane cz.1</h4>
+                            Supraśl Ikony i Szeptuchy</h4>
                         <div class="travel-event-places">
-                            Góra Kalwaria, Czersk, Warszawice, Całowanie
+                            Supraśl, Cerkiew, Muzeum Ikon, Zabudowa Historyczna Miasta, Warsztaty
                         </div>
-                        <button class="btn btn-default ">Więcej</button>
+                        <a href="https://538388-2.evenea.pl/" target="_blank"><button class="btn btn-default ">Więcej na evenea</button></a>
 
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 travel-odd ">
+                <div class="col-md-3 col-xs-12 travel-odd ">
                     <div class="travel-event">
                         <p class="month">
-                            Sierpień
+                            Wrzesień
                         </p>
                         <p class="month-day">
-                            26
+                            7
                         </p>
                         <h4>
-                            Mazowsze nieznane cz.1</h4>
+                            Okruchy Kresowej Atlantydy</h4>
                         <div class="travel-event-places">
-                            Góra Kalwaria, Czersk, Warszawice, Całowanie
+                            Spotkanie ze Zdzisławem Skorkiem. Autorem 20 książek z zakresu archeologii i historii.
                         </div>
-                        <button class="btn btn-default ">Więcej</button>
+                        <button class="btn btn-default disabled">Szczegóły wkrótce</button>
 
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 travel-odd ">
+                <div class="col-md-3 col-xs-12 travel-odd ">
                     <div class="travel-event">
                         <p class="month">
-                            Sierpień
+                            Wrzesień
                         </p>
                         <p class="month-day">
-                            26
+                            23
                         </p>
                         <h4>
-                            Mazowsze nieznane cz.1</h4>
+                            Mazowsze Nieznane – Miejsca Mocy</h4>
                         <div class="travel-event-places">
-                            Góra Kalwaria, Czersk, Warszawice, Całowanie
+                            Głupianka, Kozłów, Parysów, Sobolew, Godzisz, Podzamcze, Podebłocie
                         </div>
-                        <button class="btn btn-default ">Więcej</button>
+                        <a href="https://538388-3.evenea.pl/" target="_blank"><button class="btn btn-default ">Więcej na evena</button></a>
 
                     </div>
                 </div>
+
+
             </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Październik
+                        </p>
+                        <p class="month-day">
+                            7
+                        </p>
+                        <h4>
+                            Na Pograniczu</h4>
+                        <div class="travel-event-places">
+                            Jarnice, Liw, Węgrów, <br/>Sowia Góra, <br/>Grodzisk
+                        </div>
+                        <a href="https://538388-5.evenea.pl/" target="_blank"><button class="btn btn-default ">Więcej na evenea</button></a>
 
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Październik
+                        </p>
+                        <p class="month-day">
+                            21
+                        </p>
+                        <h4>
+                            Świętokrzyskie Nieznane</h4>
+                        <div class="travel-event-places">
+                            Oblęgorek, Perzowa Góra, Góra Dobrzeszowska, Mniów, Chlewiska, Warsztaty kulinarne </div>
+                        <a href="https://538388-6.evenea.pl/" target="_blank"><button class="btn btn-default ">Więcej na evenea</button></a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Październik
+                        </p>
+                        <p class="month-day">
+                            28
+                        </p>
+                        <h4>
+                            Kampinos Nieznany</h4>
+                        <div class="travel-event-places">
+                            Zaborów, Leszno, Granica, <br/>Kampinos, Roztoka, <br/>Wiersze, Czosnów </div>
+                        <a href="https://538388-8.evenea.pl/" target="_blank"><button class="btn btn-default ">Więcej na evenea</button></a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Listopad
+                        </p>
+                        <p class="month-day">
+                            9-12
+                        </p>
+                        <h4>
+                            11 listopada <br/>we <br/>Lwowie</h4>
+                        <div class="travel-event-places">
+                            Lwów </div>
+                        <button class="btn btn-default disabled">Szczegóły wkrótce</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Listopad
+                        </p>
+                        <p class="month-day">
+                            18
+                        </p>
+                        <h4>
+                            Tajemnie Świętych Ogni i Zamkowych Lochów</h4>
+                        <div class="travel-event-places">
+                            Ostrowiec Świętokrzyski, Opatów, Ujazd </div>
+                        <button class="btn btn-default disabled">Szczegóły wkrótce</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Listopad
+                        </p>
+                        <p class="month-day">
+                            25
+                        </p>
+                        <h4>
+                            Zagadki starego młyna – Mazowiecki smak cz.1</h4>
+                        <div class="travel-event-places">
+                            Wilga, Kownacica, Antoniówka Swierżowska, Warsztaty Andrzejkowe </div>
+                        <button class="btn btn-default disabled">Szczegóły wkrótce</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Grudzień
+                        </p>
+                        <p class="month-day">
+                            2
+                        </p>
+                        <h4>
+                            Szlakiem Wielu Religi <br/>w Warszawie <br/>cz.3</h4>
+                        <div class="travel-event-places">
+                            Warszawa </div>
+                        <button class="btn btn-default disabled">Szczegóły wkrótce</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 travel-odd ">
+                    <div class="travel-event">
+                        <p class="month">
+                            Grudzień
+                        </p>
+                        <p class="month-day">
+                            9
+                        </p>
+                        <h4>
+                            Kazimierski
+                            <BR/>Jarmark <br/>Bożonarodzeniowy</h4>
+                        <div class="travel-event-places">
+                            Gołąb, Kazimierz Dolny </div>
+                        <button class="btn btn-default disabled">Szczegóły wkrótce</button>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-    </div>
     </div>
 
     <!--END TRAVEL SECTION-->
 
-    <!--ABOUT US-->
 
     <footer>
         <div class="container-fluid ">
             <div class="container footer ">
                 <div class="row ">
-                    <div class="col-md-6 " id="contact ">
-                        <h1>Napisz do nas:</h1>
+                    <div class="col-md-3 " id="contact">
+                        <h4>Kontakt:</h4>
+                        <p>WawaGra Adrian Pogorzelski</p>
+                        <p>ul. Młyńska 1/5 , 08-460 Godzisz</p>
+                        <p>Wpis do Centralnego Rejestru Organizatorów Turystycznych Woj. Mazowieckiego nr.1694 </p>
+                        <p>
+                            <i class="fa fa-phone" aria-hidden="true"></i> 511 630 598 Adrian</p>
+                        <p> <i class="fa fa-phone" aria-hidden="true"></i>535 658 853 Maciek</p>
+                        <p><a href="mailto: adr.pogorzelski@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+ adr.pogorzelski@gmail.com</a></p>
+
 
                     </div>
+                    <div class="col-md-6">
+                        <h4>Bądź na bieżąco:</h4>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FZ-Warszawy-na-weekend-1249135431766275%2F%3Fref%3Dbr_rs&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="250" height="250" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+
+
+
+
+
+
                 </div>
 
-
             </div>
-        </div>
     </footer>
 
 
