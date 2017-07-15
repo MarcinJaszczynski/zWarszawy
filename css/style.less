@@ -29,7 +29,6 @@ h1,
 h2,
 h4 {
     font-family: 'PT Sans Narrow', Arial, sans-serif;
-    text-transform: uppercase;
     font-weight: 700;
 }
 
@@ -54,97 +53,129 @@ p {
 /*Navigation*/
 
 .navbar {
-    background: #222222 !important;
+    background: #ffbb00 !important;
     text-transform: uppercase;
-    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 700;
+    font-size: 20px;
+    height: 40px;
 }
 
+.navbar-brand img {
+        background: #ffbb00 !important;
+        height: 120px;
+        margin: 30px 10px 30px 10px;
+        border-radius: 50%;
+
+
+}
 .navbar a {
     color: #ffffff !important;
-    opacity: 0.7;
 }
 
 .navbar a:hover {
     opacity: 1;
-    background-color: #111111 !important;
+    background-color: #fb6542 !important;
 }
 
 
-/*HEADER*/
 
-.header {
-    height: 600px;
-    width: 100%;
-    padding: 30px 0px 30px 0px;
-    margin-top: 50px;
-    background-image: url(../img/bg_tatry.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-}
+/*ABOUT US*/
 
-.header img {
-    height: 350px;
-    width: 450px;
-    margin: 70px 0 0 40px;
-}
-
-.header h1 {
-    font-size: 40px;
-    font-weight: 700;
-    padding-top: 30px;
-}
-
-.header h1,
-.header p,
-.header button {
-    margin-top: 20px;
-}
-
-.header .btn {
-    border-radius: 0px;
-    margin: 40px 20px;
-}
-
-@media(max-width: 768px) {
-    .header {
-        padding: 30px;
-        height: 750px;
-    }
-    .header img {
-        width: 90%;
-        height: 300px;
-        margin: 20px 0 0 20px;
-    }
-    .header .btn {
-        font-size: 10px;
-        margin-left: 20px;
-    }
-    .header h1{
-        font-size: 20px;
-    }
-    .header p{
-        font-size: 10px;
-    }
-
-}
-
-/*RESERVATION*/
-
-.reservation {
-    padding: 80px 0 80px;
+.about-us {
+    background-color: #fff;
+    padding: 40px 0 40px;
     text-align: center;
 }
 
-.reservation h1, .reservation h4 {
-    color: #4c4c4c;
-    margin: 20px 0 20px;
+.about-us h1 {
+    
+    font-family: 'Kaushan Script', cursive;
+    color: #304f95;
+    padding: 30px;
+
 }
 
-.reservation p {
-    color: #737373;
-    font-size: 14px;
+.person-photo img {
+    border-radius: 50%;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.person-about p, .firm-about p{
+    
+    font-style: italic;
+    color: #888888;
+    font-size: 20px !important;
+    text-align: justify;
+    line-height: 140%;
+
+}
+
+.person-name {
+    font-weight: 700;
+}
+/*TRAVEL*/
+.travel {
+    background-color: #304f95;
+    text-align: center;
+    padding: 60px 0 80px;
+}
+
+.travel h1 {
+    
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.month {
+    background-color: #ff0000;
+    color: #ededed;
+    font-weight: 700;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 20px;
+    padding-top: 10px;;
+}
+
+.month-day {
+    color: #000000 !important;
+    font-weight: 700;
+    font-size: 90px;
+    margin-top: 60px;
+
+}
+
+.travel h1, .travel p {
+    color: #ededed;
     padding-bottom: 40px;
+}
+
+.travel img {
+    height: 160px;
+    width: 90%;
+}
+
+
+.travel-event {
+    border-radius: 10px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 3px solid #ff0000;
+}
+
+.travel-event-places {
+    color: #333333 !important;
+}
+.travel-event button {
+    margin: 5px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #333333;
+    color: #aaaaaa;
 }
